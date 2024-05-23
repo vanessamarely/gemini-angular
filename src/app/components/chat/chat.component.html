@@ -1,0 +1,14 @@
+<div class="chat-window">
+  <div class="chat-message">
+    {{ message }}
+  </div>
+  <div class="chat-form">
+    <input
+      class="chat-text"
+      [(ngModel)]="userInput"
+      (keyup.enter)="sendMessage()"
+    />
+    
+    <button class="chat-button" (click)="sendMessage()">Send</button>
+  </div>
+</div>
